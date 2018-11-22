@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>RegistrationForm</title>
+</head>
+<body>
+    <form action="http://www.webucator.com/course-demos/htm101/process-form.cfm" method="POST">
+
+        <label for="username">Username: </label>
+        <input type="text" name="username" id="username" size="16" required><br>
+
+        <label for="pw">Password: </label>
+        <input type="password" name="pw" id="pw" size="16" required><br>
+        
+        <input type="hidden" name="emailMe" id="emailMe" value="@esmad.ipp.pt">
+
+        <input type="radio" name="gender" id="genderm" value="m" checked><label for="genderm"> male</label><br>
+        <input type="radio" name="gender" id="genderf" value="f"><label for="genderf"> female</label><br>
+
+        <input type="checkbox" name="terms" id="terms" required><label for="terms">Terms and Conditions</label><br>
+
+        <label for="referral">referral: </label>
+        <select name="referral" id="referral">
+            <option value="0">--Please choose--</option>
+            <option value="wom">Word of Mouth</option>
+            <option value="other">Other</option>
+            <optgroup label="Search Engine">
+                <option value="google">Google</option>
+                <option value="yahoo">Yahoo!</option>
+                <option value="msn">MSN</option>
+            </optgroup>
+        </select><br>
+
+        <label for="comments">comment: </label><br>
+        <textarea name="comments" id="comments" cols="50" rows="2"></textarea><br>
+
+        <input type="submit" name="btnRegister" id="btnRegister" value="Register">
+
+        <input type="reset" name="btnClear" id="btnClear" value="Clear">
+    </form>
+</body>
+</html>
